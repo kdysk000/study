@@ -9,13 +9,19 @@ CREATE TABLE IF NOT EXISTS user (
     phone VARCHAR(20)
 );
 
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('田中太郎', 'tanaka@example.com', 30, '東京', '日本', 'アクティブ', '090-1234-5678');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('佐藤花子', 'sato@example.com', 28, '大阪', '日本', '休止中', '080-9876-5432');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('鈴木一郎', 'suzuki@example.com', 35, '福岡', '日本', 'アクティブ', '070-1111-2222');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('高橋洋子', 'takahashi@example.com', 26, '札幌', '日本', 'アクティブ', '090-3333-4444');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('伊藤優子', 'ito@example.com', 40, '名古屋', '日本', '休止中', '080-5555-6666');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('山本健太', 'yamamoto@example.com', 22, '仙台', '日本', 'アクティブ', '070-7777-8888');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('中村純子', 'nakamura@example.com', 32, '広島', '日本', '休止中', '090-9999-0000');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('小林龍之介', 'kobayashi@example.com', 29, '神戸', '日本', 'アクティブ', '080-1212-3434');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('加藤美咲', 'kato@example.com', 27, '福井', '日本', 'アクティブ', '070-5656-7878');
-INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('渡辺健', 'watanabe@example.com', 45, '金沢', '日本', '休止中', '090-9090-8080');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Tanaka Taro', 'tanaka@example.com', 30, 'Tokyo', 'Japan', 'active', '090-1234-5678');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Sato Hanako', 'sato@example.com', 28, 'Osaka', 'Japan', 'pending', '080-9876-5432');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Suzuki Ichiro', 'suzuki@example.com', 35, 'Fukuoka', 'Japan', 'active', '070-1111-2222');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Takahashi Yoko', 'takahashi@example.com', 26, 'Sapporo', 'Japan', 'active', '090-3333-4444');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Ito Yuko', 'ito@example.com', 40, 'Nagoya', 'Japan', 'pending', '080-5555-6666');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Yamamoto Kenta', 'yamamoto@example.com', 22, 'Sendai', 'Japan', 'active', '070-7777-8888');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Nakamura Jyunko', 'nakamura@example.com', 32, 'Hiroshima', 'Japan', 'pending', '090-9999-0000');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Kobayashi Ryunosuke', 'kobayashi@example.com', 29, 'Kobe', 'Japan', 'active', '080-1212-3434');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Kato Misaki', 'kato@example.com', 27, 'Fukui', 'Japan', 'active', '070-5656-7878');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Watanabe Ken', 'watanabe@example.com', 45, 'Kanazawa', 'Japan', 'pending', '090-9090-8080');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('James', 'james@example.com', 38, 'New York', 'America', 'active', '090-1122-3344');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('John', 'john@example.com', 19, 'Los Angeles', 'America', 'active', '080-5566-7788');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Robert', 'robert@example.com', 27, 'Chicago', 'America', 'pending', '070-9900-8877');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Mary', 'mary@example.com', 41, 'Houston', 'America', 'active', '090-6655-4433');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Patricia', 'patricia@example.com', 23, 'Phoenix', 'America', 'active', '080-2211-0000');
+INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Jennifer', 'jennifer@example.com', 29, 'Philadelphia', 'America', 'pending', '070-1357-2468');
