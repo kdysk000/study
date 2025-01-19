@@ -40,7 +40,7 @@ country によってグループ化し、それぞれのレコード数をカウ
 select country, count(country) as count from user group by country;
 ```
 #### グループ化して集計した結果に対して絞り込む
-country によってグループ化し、値が "japan" のレコード数をカウント
+country カラムでグループ化し、値が "japan" のレコード数をカウント
 ```
 select country, count(country) as count from user group by country having country = "japan";
 ```
