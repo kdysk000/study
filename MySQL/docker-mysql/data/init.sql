@@ -9,6 +9,19 @@ CREATE TABLE IF NOT EXISTS user (
     phone VARCHAR(20)
 );
 
+CREATE TABLE countries (
+    countryId INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    countryId INT,
+    FOREIGN KEY (countryId) REFERENCES countries(countryId)
+);
+
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Tanaka Taro', 'tanaka@example.com', 30, 'Tokyo', 'Japan', 'active', '090-1234-5678');
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Sato Hanako', 'sato@example.com', 28, 'Osaka', 'Japan', 'pending', '080-9876-5432');
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Suzuki Ichiro', 'suzuki@example.com', 35, 'Fukuoka', 'Japan', 'active', '070-1111-2222');
@@ -25,3 +38,23 @@ INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Rober
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Mary', 'mary@example.com', 41, 'Houston', 'America', 'active', '090-6655-4433');
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Patricia', 'patricia@example.com', 23, 'Phoenix', 'America', 'active', '080-2211-0000');
 INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Jennifer', 'jennifer@example.com', 29, 'Philadelphia', 'America', 'pending', '070-1357-2468');
+
+INSERT INTO countries (name) VALUES ('Japan');
+INSERT INTO countries (name) VALUES ('America');
+
+INSERT INTO users (name, email, countryId) VALUES ('Tanaka Taro', 'tanaka@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Sato Hanako', 'sato@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Suzuki Ichiro', 'suzuki@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Takahashi Yoko', 'takahashi@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Ito Yuko', 'ito@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Yamamoto Kenta', 'yamamoto@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Nakamura Jyunko', 'nakamura@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Kobayashi Ryunosuke', 'kobayashi@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Kato Misaki', 'kato@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('Watanabe Ken', 'watanabe@example.com', 1);
+INSERT INTO users (name, email, countryId) VALUES ('James', 'james@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('John', 'john@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('Robert', 'robert@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('Mary', 'mary@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('Patricia', 'patricia@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('Jennifer', 'jennifer@example.com', 2);
