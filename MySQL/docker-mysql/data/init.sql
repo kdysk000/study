@@ -41,6 +41,7 @@ INSERT INTO user (name, email, age, city, country, status, phone) VALUES ('Jenni
 
 INSERT INTO countries (name) VALUES ('Japan');
 INSERT INTO countries (name) VALUES ('America');
+INSERT INTO countries (name) VALUES ('Koria');
 
 INSERT INTO users (name, email, countryId) VALUES ('Tanaka Taro', 'tanaka@example.com', 1);
 INSERT INTO users (name, email, countryId) VALUES ('Sato Hanako', 'sato@example.com', 1);
@@ -58,3 +59,4 @@ INSERT INTO users (name, email, countryId) VALUES ('Robert', 'robert@example.com
 INSERT INTO users (name, email, countryId) VALUES ('Mary', 'mary@example.com', 2);
 INSERT INTO users (name, email, countryId) VALUES ('Patricia', 'patricia@example.com', 2);
 INSERT INTO users (name, email, countryId) VALUES ('Jennifer', 'jennifer@example.com', 2);
+INSERT INTO users (name, email, countryId) VALUES ('Wang', 'wang@example.com', NULL);
