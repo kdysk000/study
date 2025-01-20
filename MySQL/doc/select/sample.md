@@ -44,3 +44,17 @@ country カラムでグループ化し、値が "japan" のレコード数をカ
 ```
 select country, count(country) as count from user group by country having country = "japan";
 ```
+#### 内部結合 (INNER JOIN)
+```
+select users.name, email, countries.name from users join countries on users.countryId = countries.countryId;
+```
+#### 左外部結合 (LEFT OUTER JOIN)
+下記の outer は省略可
+```
+select users.name, email, countries.name from users left outer join countries on users.countryId = countries.countryId;
+```
+#### 右外部結合 (RIGHT OUTER JOIN)
+下記の outer は省略可
+```
+select users.name, email, countries.name from users right outer join countries on users.countryId = countries.countryId;
+```
